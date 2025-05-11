@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
 import { HiOutlineUser, HiOutlineShoppingBag, HiBars3BottomRight } from 'react-icons/hi2';
+import { Searchbar } from './Searchbar';
 
 export const Navbar = () => {
   return (
@@ -28,6 +29,9 @@ export const Navbar = () => {
           </button>
 
           {/* Search */}
+          <div className='overflow-hidden'>
+            <Searchbar />
+          </div>
 
           <button className='md:hidden'>
             <HiBars3BottomRight className='h-6 w-6 text-gray-700' />
